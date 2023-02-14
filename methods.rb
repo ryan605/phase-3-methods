@@ -11,10 +11,14 @@ def greet_with_default(name="programmer")
     puts "Hello, #{name}!"
 end
 
-def add num1, num2
-    puts num1
-    puts num2
-    num1 + num2
+def add (num1, num2)
+    return num1+num2 
 end
 
-puts add num1(2) + num2(5)
+def halve num
+    if num.is_a? Integer
+        num /2
+    else
+        nil
+    end
+end
